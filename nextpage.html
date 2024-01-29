@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Option</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+
+    .button-container {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .water-flow-button {
+      background: linear-gradient(45deg, #4CAF50, #008CBA);
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+      animation: unique-animation 2s infinite alternate;
+    }
+
+    .neon-button {
+      background: linear-gradient(45deg, #FFD700, #FF8C00);
+      color: black;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+      animation: unique-animation 2s infinite alternate-reverse;
+    }
+
+    .water-flow-button:hover,
+    .neon-button:hover {
+      animation: none; /* Stop the animation on hover */
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+
+    @keyframes unique-animation {
+      0% {
+        background-position: top left;
+      }
+      100% {
+        background-position: bottom right;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Choose A Option</h2>
+  <div class="button-container">
+    <button class="water-flow-button" onclick="window.location.href='https://livecrichd.netlify.app/'">Click here to enter Sports website</button>
+    <button class="neon-button" onclick="window.location.href='https://t.me/+vi_UBdhOsN5jYzY1'">Join our Telegram</button>
+  </div>
+</body>
+</html>
